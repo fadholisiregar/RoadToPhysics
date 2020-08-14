@@ -1,0 +1,175 @@
+/* Styling Body */
+body{
+	font: 16px/28px arial, sans-serif;
+	margin: 0;
+	padding: 0;	
+}
+
+*{
+	box-sizing: border-box;
+}
+
+
+/*---------------------------------------------------*/
+
+/*Styling Header*/
+
+/* navigasi 1*/
+main{
+	padding: 15px;
+}
+
+.container {
+	display: inline;
+}
+
+.nav1{
+	background-color: #404040;
+	padding: 1px;
+	position: sticky;
+	top: 0;
+	z-index: 1;	
+}
+
+.nav1 ul li{
+	display: inline-block;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+
+nav a {
+	font-size: 15px;
+	text-indent: 22px;
+	text-decoration: none;
+	color: white;
+	padding: 3px;
+}
+
+.nav1 a:hover {
+	background-color: lightskyblue;
+	color: white;
+}
+
+
+/* navigasi 2 */
+.nav2 {
+	padding: 30px 0 30px 0;
+	background-image: linear-gradient(gray,rgba(220,0,200,.2));
+	text-align: center;
+}
+
+.nav2 h2{
+	color: white;
+	word-spacing: 6px;
+}
+
+.judul{
+	text-align: center;
+	color: white;
+	font-size: 50px;
+}
+
+.nav2 a{
+	padding: 5px 20px; 
+	flex-grow: 1;
+	background-color: rgba(100,0,150,.2);
+	opacity: .5;
+	border-radius: 10px;
+
+}
+
+.tombol .mulai{
+	padding: 5px 40px ;
+	border-radius: 10px;
+	word-spacing: 7px;
+}
+
+.tombol a:hover{
+	background-color: white;
+	color: rgba(100,0,150,.5);
+	transition: 0.7s;
+}
+
+.tombol{
+	display: flex;
+	justify-content: center;
+	padding-right: 50px;
+}
+
+/*---------------------------------------------------*/
+
+/*styling content*/
+
+.card{
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	padding: 20px;
+	margin: 20px 20px;
+}
+
+#content{
+	float: left;
+	width: 75%;
+}
+
+aside{
+	float: right;
+	width: 25%;
+	margin-top: 20px;
+}
+
+main{
+	overflow: auto;
+	background-color: white;
+}
+
+
+.profile header{
+	text-align: center;
+}
+
+.profile table{
+	line-height: 1.5;
+	font-size: 14px;
+}
+
+
+#content img{
+	width: 100%;
+	max-height: 400px;
+	padding: 0 40px 0 40px;
+}
+
+ #content p {
+	text-indent: 40px;
+	padding:0 10px 10px 10px ;
+	text-align: justify;
+}
+
+img{
+	position: static;
+}
+
+
+#intro, #klasik, #modern{
+	padding-top: 20px;
+}
+
+/*---------------------------------------------------*/
+
+/*styling pada footer*/
+
+footer{
+	background-color: #404040;
+	padding: 1px;
+	text-align: center;
+	color: white;
+}
+
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+       width: 100%;
+       padding: 0;
+   }
+}
